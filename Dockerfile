@@ -20,8 +20,8 @@ RUN rm kafka_2.12-${KAFKA_VERSION}.tgz
 #
 # Copy Artifacts
 #
-COPY lambda_function.py ${LAMBDA_TASK_ROOT}
-COPY kafka.properties ${LAMBDA_TASK_ROOT}
+COPY code/lambda_function.py ${LAMBDA_TASK_ROOT}
+COPY code/kafka.properties ${LAMBDA_TASK_ROOT}
 
 # Run handler
 CMD ["lambda_function.lambda_handler"]
