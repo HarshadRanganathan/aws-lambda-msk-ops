@@ -1,6 +1,6 @@
 # aws-lambda-msk-ops
 
-Lambda function that performs various actions against MSK cluster.
+Lambda function that performs various admin actions against MSK cluster.
 
 ## RESET_CONSUMER_GROUP_OFFSETS_BY_DATETIME_ALL_TOPICS
 
