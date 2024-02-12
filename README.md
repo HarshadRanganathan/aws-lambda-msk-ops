@@ -24,3 +24,17 @@ If `DateTime` is not supplied then it uses the current date timestamp for offset
   "ConsumerGroup": "test-topic"
 }
 ```
+
+## CHECK_CONSUMER_GROUP_LAG
+
+Returns the current lag of consumer group (or) polls until lag becomes 0 and returns the response for the provided timeout duration.
+
+### Input Payload
+
+```
+{
+  "RequestType": "CHECK_CONSUMER_GROUP_LAG",
+  "ConsumerGroup": "test-topic",
+  "TimeoutInMinutes": 15
+}
+```
